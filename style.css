@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200vh;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    background-color: #444;
+    margin: 20px auto;
+    padding: 25px;
+    gap: 10px;
+    width: 80%;
+    text-align: center;
+    border: 2px solid #555;
+    border-radius: 10px;    
+}
+
+.hero {
+    background-color: #555;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin: 0 170px;
+    padding: 15px;
+    text-align: center;
+}
+
+.card-jogos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px 0; 
+    gap: 25px;
+    background-color: #000000;
+    border: 1px solid #000000;
+}
+
+.jogos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #555;
+    background-color: #666; 
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.jogos:hover {
+    background-color: #000000;
+    color: #98f8ff;
+}
+
+a {
+    color: #98f8ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 30px;
+    list-style: none;
+}
+
+li {
+    border: 1px solid #666;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 55px;
+    transition: all 0.4s ease;
+}
+
+li:hover {
+    background-color: #060000;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #98f8ff;
+    color: #000000;
+    padding: 5px;
+} 
+
+@media screen and (max-width: 768px) {
+    
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .hero {
+        margin: 0 10px;
+    }
+
+    .card-jogos {
+        grid-template-columns: 1fr; 
+        padding: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
